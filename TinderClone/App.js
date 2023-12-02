@@ -1,29 +1,13 @@
 import React from 'react';
-import { Text, View, StyleSheet, Pressable, useWindowDimensions, Image } from 'react-native';
-import Card from './src/components/TinderCard';
-import users from './assets/data/users';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-
-import AnimatedStack from './src/components/AnimatedStack';
+import { View, StyleSheet } from 'react-native';
+import HomeScreen from './src/screens/HomeScreen';
+import MatchesScreen from './src/screens/MatchesScreen';
 
 
 const App = () => {
-
-  const onSwipeLeft = (user) => {
-    console.log('swiped left', user.name);
-  };
-  const onSwipeRight = (user) => {
-    console.log('swiped right', user.name);
-  };
-
   return (
     <View style={styles.pageContainer}>
-      <AnimatedStack
-        data={users}
-        renderItem = {(({ item }) => <Card user={item} />)}
-        onSwipeLeft={onSwipeLeft}
-        onSwipeRight={onSwipeRight}
-      />
+      <MatchesScreen/>
     </View>
   );
 };
