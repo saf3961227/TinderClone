@@ -7,6 +7,10 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
+import { Amplify } from 'aws-amplify';
+import amplifyconfig from './src/amplifyconfiguration.json';
+
+Amplify.configure(amplifyconfig);
 
 const App = () => {
   const [activeScreen, setActiveScreen] = useState('HOME');
@@ -47,7 +51,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     padding: 30,
-    marginTop: 20
   },
 });
 
