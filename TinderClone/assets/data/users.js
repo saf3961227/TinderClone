@@ -1,10 +1,10 @@
 export default [
   {
     id: '1',
-    name: 'Vadim Savin',
+    name: 'Voltage Training',
     image:
-      'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim1.JPG',
-    bio: 'I will be the semicolons to your code',
+      'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/jeff.jpeg',
+    bio: "Growing your fitness business is wack. We're like a fairy godagency (like a godmother) - for fitness professionals, gyms and clients",
   },
   {
     id: '2',
